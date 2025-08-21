@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Detalle de Municipio</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h1 id="titulo"></h1>
+  </header>
+  <div class="container">
+    <p><strong>Correo:</strong> <span id="correo"></span></p>
+    <h2>Requerimientos</h2>
+    <table class="table" id="tabla-requerimientos">
+      <thead>
+        <tr><th>ID</th><th>Tipo</th><th>Estado</th><th>Fecha límite</th></tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <a href="index.html" class="button">Volver</a>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const params = new URLSearchParams(window.location.search);
+      const nombre = params.get('nombre');
+      fetch('../data/municipios.json')
+        .then(res => res.json())
+        .then(municipios => {
+          const mun = municipios.find(m => m.nombre === nombre);
+          if (mun) {
+            document.getElementById('titulo').textContent = mun.nombre;
+            document.getElementById('correo').textContent = mun.email_oficial;
+            const tbody = document.querySelector('#tabla-requerimientos tbody');
+            mun.estado_requerimientos.forEach(r => {
+              const tr = document.createElement('tr');
+              tr.innerHTML = `<td>${r.id}</td><td>${r.tipo}</td><td class="status-${r.estado.replace(' ', '\\ ')}">${r.estado}</td><td>${r.fecha_limite}</td>`;
+              tbody.appendChild(tr);
+            });
+          }
+        });
+    });
+  </script>
+</body>
+</html>
