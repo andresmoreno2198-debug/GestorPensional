@@ -1,0 +1,50 @@
+[
+  {
+    "nombre": "Bochalema",
+    "email_oficial": "bochalema@municipio.gov.co",
+    "estado_requerimientos": [
+      {"id": 1, "tipo": "Reclamación administrativa", "estado": "pendiente", "fecha_limite": "2024-06-10"},
+      {"id": 2, "tipo": "PASIVOCOL", "estado": "en proceso", "fecha_limite": "2024-07-01"}
+    ]
+  },
+  {
+    "nombre": "Cachira",
+    "email_oficial": "cachira@municipio.gov.co",
+    "estado_requerimientos": [
+      {"id": 1, "tipo": "Cuota parte", "estado": "pendiente", "fecha_limite": "2024-06-15"},
+      {"id": 2, "tipo": "CETIL", "estado": "finalizado", "fecha_limite": "2024-05-20"}
+    ]
+  },
+  {
+    "nombre": "Convencion",
+    "email_oficial": "convencion@municipio.gov.co",
+    "estado_requerimientos": [
+      {"id": 1, "tipo": "Saneamiento de aportes", "estado": "en proceso", "fecha_limite": "2024-06-25"},
+      {"id": 2, "tipo": "Generación de bonos", "estado": "pendiente", "fecha_limite": "2024-07-05"}
+    ]
+  },
+  {
+    "nombre": "La Esperanza",
+    "email_oficial": "laesperanza@municipio.gov.co",
+    "estado_requerimientos": [
+      {"id": 1, "tipo": "Fe de vida", "estado": "pendiente", "fecha_limite": "2024-06-08"},
+      {"id": 2, "tipo": "Reclamación administrativa", "estado": "en proceso", "fecha_limite": "2024-06-30"}
+    ]
+  },
+  {
+    "nombre": "Mutiscua",
+    "email_oficial": "mutiscua@municipio.gov.co",
+    "estado_requerimientos": [
+      {"id": 1, "tipo": "PASIVOCOL", "estado": "pendiente", "fecha_limite": "2024-06-18"},
+      {"id": 2, "tipo": "Cuota parte", "estado": "en proceso", "fecha_limite": "2024-07-02"}
+    ]
+  },
+  {
+    "nombre": "Puerto Santander",
+    "email_oficial": "puertosantander@municipio.gov.co",
+    "estado_requerimientos": [
+      {"id": 1, "tipo": "CETIL", "estado": "pendiente", "fecha_limite": "2024-06-12"},
+      {"id": 2, "tipo": "Reclamación administrativa", "estado": "en proceso", "fecha_limite": "2024-06-28"}
+    ]
+  }
+]
